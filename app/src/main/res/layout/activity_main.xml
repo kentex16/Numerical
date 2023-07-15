@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:paddingTop="30dp"
+    android:paddingBottom="50dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/sample_bg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="400dp"
+            android:layout_height="250dp"
+            app:layout_constraintEnd_toStartOf="@+id/textView2"
+            app:srcCompat="@drawable/sample_icon" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GROUP 2"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/IEEE754Button"
+            style="@style/homeButtonTextStyle"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_button_background"
+            android:backgroundTint="#FF0000"
+            android:text="IEEE 754" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp"/>
+
+        <Button
+            android:id="@+id/RootFindingButton"
+            style="@style/homeButtonTextStyle"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="Root Finding"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_button_background"
+            android:backgroundTint="#FF0000" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp"/>
+
+        <Button
+            android:id="@+id/JacobiMethodButton"
+            style="@style/homeButtonTextStyle"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="JACOBI METHOD"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_button_background"
+            android:backgroundTint="#FF0000" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp"/>
+
+        <Button
+            android:id="@+id/exitButton"
+            style="@style/homeButtonTextStyle"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="@string/exit"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_button_background"
+            android:backgroundTint="#FF0000" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

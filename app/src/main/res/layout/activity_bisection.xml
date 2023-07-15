@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/equation_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Equation"
+        android:background="@drawable/edittext_background"
+        android:inputType="text" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <EditText
+        android:id="@+id/xl_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="XL:"
+        android:background="@drawable/edittext_background"
+        android:inputType="numberSigned|numberDecimal" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <EditText
+        android:id="@+id/xr_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="XR:"
+        android:background="@drawable/edittext_background"
+        android:inputType="numberSigned|numberDecimal" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <EditText
+        android:id="@+id/precision_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Precision:"
+        android:background="@drawable/edittext_background"
+        android:inputType="numberSigned|numberDecimal" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="match_parent"
+        style="@style/galleryButtonTextStyle"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:text="Calculate"
+        android:background="@drawable/rounded_button_background"
+        android:backgroundTint="#FF0000" />
+
+
+        <TableLayout
+            android:id="@+id/iteration_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DDDDDD">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="i"
+                    android:visibility ="gone"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="XL"
+                    android:visibility ="gone"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="XR"
+                    android:visibility ="gone"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="XM"
+                    android:visibility ="gone"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="YL"
+                    android:visibility ="gone"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="YM"
+                    android:visibility ="gone"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="YR"
+                    android:visibility ="gone"/>
+            </TableRow>
+
+        </TableLayout>
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp" />
+
+</LinearLayout>
