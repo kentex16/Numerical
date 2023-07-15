@@ -1,0 +1,438 @@
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/initial_guess_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter the initial guess for variables:"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:paddingBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/x_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="x:"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/x_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberSigned|numberDecimal"
+                android:background="#FFFFFF"
+                android:hint="Enter initial guess for x" />
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/y_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="y:"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/y_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="numberSigned|numberDecimal"
+            android:hint="Enter initial guess for y" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/z_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="z:"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/z_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="numberSigned|numberDecimal"
+            android:hint="Enter initial guess for z" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/coefficients_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the coefficients of the equations:"
+        android:textSize="16sp"
+        android:padding="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/equation1_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Equation 1:"
+            android:padding="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/a11_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="a11:"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/a11_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberSigned|numberDecimal"
+                android:hint="Enter coefficient a11" />
+
+            <TextView
+                android:id="@+id/a12_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="a12:"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/a12_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberSigned|numberDecimal"
+                android:hint="Enter coefficient a12" />
+
+            <TextView
+                android:id="@+id/a13_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="a13:"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/a13_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberSigned|numberDecimal"
+                android:hint="Enter coefficient a13" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/equation2_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Equation 2:"
+            android:padding="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/a21_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="a21:"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/a21_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberSigned|numberDecimal"
+                android:hint="Enter coefficient a21" />
+
+            <TextView
+                android:id="@+id/a22_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="a22:"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/a22_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberSigned|numberDecimal"
+                android:hint="Enter coefficient a22" />
+
+            <TextView
+                android:id="@+id/a23_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="a23:"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/a23_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberSigned|numberDecimal"
+                android:hint="Enter coefficient a23" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/equation3_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Equation 3:"
+            android:padding="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/a31_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="a31:"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/a31_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberSigned|numberDecimal"
+                android:hint="Enter coefficient a31" />
+
+            <TextView
+                android:id="@+id/a32_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="a32:"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/a32_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberSigned|numberDecimal"
+                android:hint="Enter coefficient a32" />
+
+            <TextView
+                android:id="@+id/a33_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="a33:"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/a33_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberSigned|numberDecimal"
+                android:hint="Enter coefficient a33" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/constants_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the constants:"
+        android:textSize="16sp"
+        android:padding="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/constant1_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Constant 1:"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/constant1_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned|numberDecimal"
+            android:hint="Enter constant d1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/constant2_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Constant 2:"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/constant2_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned|numberDecimal"
+            android:hint="Enter constant d2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/constant3_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Constant 3:"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/constant3_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned|numberDecimal"
+            android:hint="Enter constant d3" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/iterations_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the number of iterations:"
+        android:textSize="16sp"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/iterations_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter the number of iterations" />
+
+        <TextView
+            android:id="@+id/output_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:textSize="16sp"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/solve_button"
+            android:layout_width="match_parent"
+            style="@style/galleryButtonTextStyle"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="Solve"
+            android:textSize="18sp"
+            android:background="@drawable/rounded_button_background"
+            android:backgroundTint="#FF0000" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <TableLayout
+                    android:id="@+id/iteration_table_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                </TableLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+</LinearLayout>
+</ScrollView>

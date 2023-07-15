@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".SecantActivity">
+
+
+    <EditText
+        android:id="@+id/equation_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Equation"
+        android:background="@drawable/edittext_background"
+        android:inputType="text" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+
+    <EditText
+        android:id="@+id/xa_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Xa"
+        android:background="@drawable/edittext_background"
+        android:inputType="numberSigned|numberDecimal" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <EditText
+        android:id="@+id/xb_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Xb"
+        android:background="@drawable/edittext_background"
+        android:inputType="numberSigned|numberDecimal" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <EditText
+        android:id="@+id/precision_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Precision"
+        android:background="@drawable/edittext_background"
+        android:inputType="numberSigned|numberDecimal" />
+
+    <Button
+        android:id="@+id/calculate_button"
+        style="@style/galleryButtonTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button_background"
+        android:text="Calculate"
+        android:backgroundTint="#FF0000"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <TableLayout
+            android:id="@+id/iteration_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:visibility="gone"/>
+
+    </ScrollView>
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/decimalLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter a decimal number:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/decimalEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned|numberDecimal"
+        android:hint="Decimal number"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/convertButton"
+        style="@style/galleryButtonTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:backgroundTint="#FF0000"
+        android:background="@drawable/rounded_button_background"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
+

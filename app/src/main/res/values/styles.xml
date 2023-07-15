@@ -1,0 +1,8 @@
+<resources>
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/rounded_button_background</item>
+        <item name="backgroundTint">@color/gradient</item>
+
+
+    </style>
+</resources>
